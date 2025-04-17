@@ -286,27 +286,45 @@ if __name__ == "__main__":
     alpha_players = ["Jackson", "Green", "Day", "Worgan", "Allcut", "Crockwell", "Jasper"]
     alpha_league = KillTeamLeague(alpha_players, "Alpha")
     # Add example match
-    alpha_league.add_result("Allcut", "Green", "W")
-    alpha_league.add_result("Green", "Allcut", "L")
+    alpha_league.add_result("Allcut", "Green", "L")
+    alpha_league.add_result("Green", "Allcut", "W")
     alpha_league.add_result("Day", "Crockwell", "W")
     alpha_league.add_result("Crockwell", "Day", "L")
-    alpha_league.add_result("Green", "Day", "L")
-    alpha_league.add_result("Day", "Green", "W")
+    alpha_league.add_result("Green", "Day", "W")
+    alpha_league.add_result("Day", "Green", "L")
     alpha_league.add_result("Worgan", "Allcut", "W")
     alpha_league.add_result("Allcut", "Worgan", "L")
     alpha_league.add_result("Crockwell", "Jasper", "W")
     alpha_league.add_result("Jasper", "Crockwell", "L")
-    alpha_league.add_result("Worgan", "Green", "W")
-    alpha_league.add_result("Green", "Worgan", "L")
-    
+    alpha_league.add_result("Worgan", "Green", "L")
+    alpha_league.add_result("Green", "Worgan", "W")
+    alpha_league.add_result("Jackson", "Green", "L")
+    alpha_league.add_result("Green", "Jackson", "W")
+    alpha_league.add_result("Jackson", "Allcut", "W")
+    alpha_league.add_result("Allcut", "Jackson", "L")
+    alpha_league.add_result("Worgan", "Day", "W")
+    alpha_league.add_result("Day", "Worgan", "L")
+    alpha_league.add_result("Worgan", "Crockwell", "W")
+    alpha_league.add_result("Crockwell", "Worgan", "L")
+    alpha_league.add_result("Jasper", "Allcut", "L")
+    alpha_league.add_result("Allcut", "Jasper", "W")
+    alpha_league.add_result("Green", "Jasper", "W")
+    alpha_league.add_result("Jasper", "Green", "L")
+    alpha_league.add_result("Allcut", "Day", "D")
+    alpha_league.add_result("Day", "Allcut", "D")
+    alpha_league.add_result("Allcut", "Crockwell", "W")
+    alpha_league.add_result("Crockwell", "Allcut", "L")
+    alpha_league.add_result("Green", "Crockwell", "W")
+    alpha_league.add_result("Crockwell", "Green", "L")
     
     # Add some example victory points
-    alpha_league.victory_points[2] = 33  # Day's VP
-    alpha_league.victory_points[5] = 28  # Crockwell's VP
-    alpha_league.victory_points[4] = 29  # Allcuts's VP
-    alpha_league.victory_points[1] = 24  # Green's VP
-    alpha_league.victory_points[3] = 35  # Worgan's VP
-    alpha_league.victory_points[6] = 13  # Jasper's VP
+    alpha_league.victory_points[0] = 21 + 16 #Jason'#s VP
+    alpha_league.victory_points[2] = 33  + 13 + 17 # Day's VP
+    alpha_league.victory_points[5] = 28  + 8 + 5 + 11# Crockwell's VP
+    alpha_league.victory_points[4] = 29  + 2 + 20 + 17 + 21 # Allcuts's VP
+    alpha_league.victory_points[1] = 24 + 13 + 19 + 19 + 50# Green's VP
+    alpha_league.victory_points[3] = 35 + 14 + 17   # Worgan's VP
+    alpha_league.victory_points[6] = 13  + 4 + 5# Jasper's VP
     
     # Bravo Block
     bravo_players = ["Quy", "Ambrose", "Kompart", "Dunleavy", "Parrot", "Hodgson", "Charlie"]
@@ -326,15 +344,36 @@ if __name__ == "__main__":
     bravo_league.add_result("Ambrose", "Dunleavy", "L")
     bravo_league.add_result("Quy", "Kompart", "W")
     bravo_league.add_result("Kompart", "Quy", "L")
+    bravo_league.add_result("Parrot", "Hodgson", "W")
+    bravo_league.add_result("Hodgson", "Parrot", "L")
+    bravo_league.add_result("Dunleavy", "Kompart", "W")
+    bravo_league.add_result("Kompart", "Dunleavy", "L")
+    bravo_league.add_result("Quy", "Hodgson", "W")
+    bravo_league.add_result("Hodgson", "Quy", "L")
+    bravo_league.add_result("Dunleavy", "Parrot", "W")
+    bravo_league.add_result("Parrot", "Dunleavy", "L")
+    bravo_league.add_result("Ambrose", "Kompart", "L")
+    bravo_league.add_result("Kompart", "Ambrose", "W")
+    bravo_league.add_result("Quy", "Charlie", "W")
+    bravo_league.add_result("Charlie", "Quy", "L")
+    bravo_league.add_result("Dunleavy", "Hodgson", "W")
+    bravo_league.add_result("Hodgson", "Dunleavy", "L")
+    bravo_league.add_result("Quy", "Parrot", "W")
+    bravo_league.add_result("Parrot", "Quy", "L")
+    bravo_league.add_result("Hodgson", "Kompart", "L")
+    bravo_league.add_result("Kompart", "Hodgson", "W")
+    bravo_league.add_result("Hodgson", "Charlie", "L")
+    bravo_league.add_result("Charlie", "Hodgson", "W")
+
 
     # Add some example victory points
-    bravo_league.victory_points[0] = 26  # Ambrose's VP
-    bravo_league.victory_points[1] = 45  # Ambrose's VP
-    bravo_league.victory_points[5] = 4   # Hodgson's VP
-    bravo_league.victory_points[4] = 38  # Parrots's VP
-    bravo_league.victory_points[6] = 28  # Charlie's VP
-    bravo_league.victory_points[3] = 27  #Dun's
-    bravo_league.victory_points[2] = 23  #Max
+    bravo_league.victory_points[0] = 26 + 20 + 17 + 20 # Quy's VP
+    bravo_league.victory_points[1] = 45 + 16  # Ambrose's VP
+    bravo_league.victory_points[5] = 4 + 7 + 14 + 11 + 15# Hodgson's VP
+    bravo_league.victory_points[4] = 38 + 15 + 9 + 6 # Parrots's VP
+    bravo_league.victory_points[6] = 28  + 6 + 20 # Charlie's VP
+    bravo_league.victory_points[3] = 27 + 19 + 20 + 20 #Dun's
+    bravo_league.victory_points[2] = 23  + 14 + 17 + 19 #Max
     
     
     # Create visualizations
