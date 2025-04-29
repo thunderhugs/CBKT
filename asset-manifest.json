@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/CBKT/nkt/static/css/main.2b9ae6fc.css",
+    "main.js": "/CBKT/nkt/static/js/main.8fc549ba.js",
+    "static/media/Spring Tournament 2025 data - Sheet1.csv": "/CBKT/nkt/static/media/Spring Tournament 2025 data - Sheet1.4b412c4e5952a9f2b74e.csv",
+    "index.html": "/CBKT/nkt/index.html",
+    "main.2b9ae6fc.css.map": "/CBKT/nkt/static/css/main.2b9ae6fc.css.map",
+    "main.8fc549ba.js.map": "/CBKT/nkt/static/js/main.8fc549ba.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b9ae6fc.css",
+    "static/js/main.8fc549ba.js"
+  ]
+}
